@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import requests
 from datetime import datetime
-import pyperclip
+
 
 st.set_page_config(layout='wide')
 
@@ -69,15 +69,7 @@ st.dataframe(df,use_container_width=True)
 # st.table(df)
 
 
-# Function to copy dataframe content to clipboard in a way that each value is pasted in a separate cell in Excel
-def copy_to_clipboard():
-    content = df.to_csv(sep='\t', index=False, header=False)
-    pyperclip.copy(content)
-    st.success("Tabla copiada!")
 
-# Boton para copiar tabla
-if st.button('Copiar tabla sin miedo.'):
-    copy_to_clipboard()
 
 
 #def main():
