@@ -6,7 +6,7 @@ from datetime import datetime
 
 st.set_page_config(layout='wide')
 
-st.header("Pronósticos de temperaturas y precipitación de WeatherUnderground a 10 días")
+st.header("Pronósticos  a 10 días")
 
 
 
